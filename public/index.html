@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+<title>New Year CTF 2025</title>
+<style>
+  * {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 110%;
+  }
+
+  article {
+    margin: 20px;
+
+    h1 {
+      font-size: 3em;
+      text-align: center;
+      .super {
+        vertical-align: super;
+      }
+    }
+
+    section {
+      margin: 2em 0;
+    }
+  }
+
+  input[type="text"] {
+    border: 0;
+    border-bottom: 1px solid;
+  }
+  button {
+    width: 100%;
+  }
+</style>
+<body>
+<article>
+  <div>Name: <input type="text" /></div>
+  <div>Date: Jan 1, 2025</div>
+
+  <h1>2025<span class="super">th</span> Grade Math Test</h1>
+  <form action="/answer">
+  <section>
+    1. What is 1 + 1?<br />
+    <input type="text" name="n1" />
+  </section>
+  <section>
+    2. Satisfy the following equations:<br />
+    a + a = a<br />
+    a ≠ 0<br />
+    a = <input type="text" name="n2" />
+  </section>
+  <section>
+    3. Satisfy the following equations:<br />
+    a + b + c = a + b + c<br />
+    a + b + c ≠ c + b + a<br />
+    a = <input type="text" name="n3" /><br />
+    b = <input type="text" name="n3" /><br />
+    c = <input type="text" name="n3" />
+  </section>
+
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+  </form>
+</article>
+</body>
+</html>
